@@ -40,7 +40,8 @@ function App() {
           type='submit'>Search</button>
       </form>
       {result.map(book => (
-        <a href={book.volumeInfo.previewLink}>
+        <a href={book.volumeInfo.imageLinks
+          .previewLink}>
           <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title} />
         </a>
       )
